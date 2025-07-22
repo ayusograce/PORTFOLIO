@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grace Ayuso | Portafolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Ayuso | Portafolio</title>
+    <meta name="description" content="Portafolio de Grace Ayuso, desarrolladora de software especializada en Front-End. Explora mis proyectos y contáctame." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/images/ga-icon.png" type="image/png" />
 </head>
 <body>
+
     <header>
-        <nav>
         <h1>Grace Ayuso</h1>
+        <button id="menu" aria-label="Menu button"></button>
+        <nav class="nav" id="nav">
+        
         <ul>
             <li><a href="#about">Sobre mí</a></li>
             <li><a href="#projects">Proyectos</a></li>
@@ -19,108 +24,57 @@
         </nav>
     </header>
 
-    <section id="about" class="intro-section hidden">
-    <div class="hero">
-        <img src="assets/images/IMG_20240523_100253 (1).jpg" alt="Adriana Ayuso" class="profile-img" />
-        <div>
-        <h2>Desarrolladora de Software</h2>
-        <p>Construyo experiencias web modernas y funcionales.</p>
-        <a href="assets/pdfs/Grace Ayuso-Software Dev.pdf" target="_blank" class="btn">Ver mi CV</a>
+    <section class="hidden" id="hero">
+        <div class="hero">
+            <div>
+                <h2>Desarrolladora de Software</h2>
+                <p>Construyo experiencias web modernas y funcionales.</p>
+            </div>
+            <a href="#about" class="scroll-down" aria-label="scroll-down">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9" />
+            </a>
         </div>
-    </div>
+    </section>
 
-    <div class="about">
-        <h2>Sobre mí</h2>
-        <p>Soy desarrolladora enfocada en el Front-End con experiencia en HTML, CSS, JavaScript, Node.js y Express. He creado sitios para pequeños negocios locales y proyectos educativos. Me apasiona la tecnología y la experiencia del usuario.</p>
-    </div>
+    <section id="about" class="hidden">
+        <div class="about">
+            <h2>Sobre mí</h2>
+            <div class="profile-info">
+                <img src="assets/images/profile.jpg" alt="Adriana Ayuso" class="profile-img" />
+                <p>Soy desarrolladora enfocada en el Front-End con experiencia en HTML, CSS, JavaScript, Node.js y Express. He creado sitios para pequeños negocios locales y proyectos educativos. Me apasiona la tecnología y la experiencia del usuario.</p>
+            </div>
+            <a href="assets/pdfs/Grace Ayuso-Software Dev.pdf" target="_blank" class="btn">Ver mi CV</a>
+        </div> 
     </section>
 
 
     <section id="projects" class="hidden">
         <h2>Proyectos</h2>
-
-        <div class="project">
-            <a href="https://bookrecapp25.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/book-app.JPG" alt="Captura de la aplicación de libros" />
-            </a>
-            <div>
-                <h3>Book Discovery App</h3>
-                <p>Aplicación MVC con Node.js y JWT para buscar y recomendar libros.</p>
-                <p><strong>Tecnologías:</strong> Node.js, Express, EJS</p>
-                <a href="https://github.com/ayusograce/bookRecApp.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <a href="https://sleepout-team11.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/camping-store.JPG" alt="Captura de Camping Store" />   
-            </a>
-            <div>
-                <h3>Camping Store</h3>
-                <p>Proyecto grupal de Front End para ver imformación sobre productos de acampar y comprarlos.</p>
-                <p><strong>Tecnologías:</strong>JavaScript, HTML, Node.js</p>
-                <a href="https://github.com/ayusograce/wdd330-sleepoutside-team11.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <a href="https://cse340-n3we.onrender.com/" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/vehicles-site.JPG" alt="Captura del Vehicles Site" />
-            </a>
-            <div>
-                <h3>Vehicles site</h3>
-                <p>Aplicación MVC para ver información sobre autos y dejar comentarios.</p>
-                <p><strong>Tecnologías:</strong> Node.js, Express, EJS, NoSQL </p>
-                <a href="https://github.com/ayusograce/CSE340-starter.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <a href="https://ayusograce.github.io/wdd231/project/home" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/book-club.JPG" alt="Captura del Proyecto Book Club" />
-            </a>
-            <div>
-                <h3>Book Club Website</h3>
-                <p>Sitio web para un club de libros virtual.</p>
-                <p><strong>Tecnologías:</strong> JavaScript, HTML, CSS</p>
-                <a href="https://github.com/ayusograce/wdd231/tree/main/project" target="_blank" >Ver en GitHub</a>
-            </div>
-        </div>    
-        <div class="project">
-            <a href="https://ayusograce.github.io/wdd231/chamber/index" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/chamber.JPG" alt="Captura del Proyecto Cámara de Comercio" />
-            </a>
-            <div>
-                <h3>Commerce Chamber Site</h3>
-                <p>Sitio web para una cámara de comercio local.</p>
-                <p><strong>Tecnologías:</strong>JavaScript, HTML, CSS</p>
-                <a href="https://github.com/ayusograce/wdd231/tree/main/chamber" target="_blank">Ver en GitHub</a>
-            </div>
-        </div>
-        <div class="project">
-            <a href="https://ayusograce.github.io/wdd131/project/home" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/irresistible-gourmet.JPG" alt="Captura del Proyecto Irresistible Gourmet" />
-            </a>
-            <div>
-                <h3>Bakery Website</h3>
-                <p>Sitio web para una pastelería local.</p>
-                <p><strong>Tecnologías:</strong>JavaScript, HTML, CSS</p>
-                <a href="https://github.com/ayusograce/wdd131/tree/main/project" target="_blank">Ver en GitHub</a>
-            </div>
-        </div>
+        <div id="projects-container" class="projects-grid"></div>
     </section>
+
 
     <section id="contact" class="hidden">
         <h2>Contacto</h2>
-        <p>Puedes escribirme directamente por correo o conectar en redes:</p>
-        <ul>
-        <li>Email: <a href="mailto:adriayusof@gmail.com">adriayusof@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/ayusograce" target="_blank">ayusograce</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/grace-ayuso/" target="_blank">grace-ayuso</a></li>
+        <p>Puedes escribirme directamente por correo (adriayusof@gmail.com) o conectar en redes:</p>
+        <ul class="social-links">
+            <li><a href="mailto:adriayusof@gmail.com"><img src="assets/images/email_icon.svg" alt="Mail icon" id="email-icon"></a></li>
+            <li><a href="https://github.com/ayusograce" target="_blank"><img src="assets/images/github_icon.svg" alt="Github icon" id="github-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/grace-ayuso/" target="_blank"><img src="assets/images/linkedin_icon.svg" alt="LinkedIn icon" id="linkedin-icon"></a></li>
         </ul>
+        <a href="#hero" class="scroll-up" aria-label="Scroll up">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a58f7e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15" />
+            </svg>
+        </a>    
     </section>
 
     <footer>
         <p>&copy; 2025 Grace Ayuso.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/projects.js"></script>
 </body>
 </html>

@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adriana Ayuso | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace Ayuso | Portfolio</title>
+    <meta name="description" content="Portfolio of Grace Ayuso, Front-End Software Developer. Explore my projects and get in touch." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/images/ga-icon.png" type="image/png" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Adriana Ayuso</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="index.html">ES</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Front-End Developer</h2>
-    <p>I build modern and functional web experiences.</p>
-    <a href="assets/pdfs/CV-AdrianaAyuso.pdf" target="_blank" class="btn">View my CV</a>
-  </section>
+    <header>
+        <h1>Grace Ayuso</h1>
+        <button id="menu" aria-label="Menu button"></button>
+        <nav class="nav" id="nav">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">ES</a></li>
+        </ul>
+        </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a front-end developer with experience in HTML, CSS, JavaScript, Node.js, and Express. I've built websites for local businesses and school projects. I'm passionate about technology and user experience.</p>
-  </section>
+    <section class="hidden" id="hero">
+        <div class="hero">
+            <div>
+                <h2>Software Developer</h2>
+                <p>I build modern and functional web experiences.</p>
+            </div>
+            <a href="#about" class="scroll-down" aria-label="scroll-down">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+            </a>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <section id="about" class="hidden">
+        <div class="about">
+            <h2>About Me</h2>
+            <div class="profile-info">
+                <img src="assets/images/profile.jpg" alt="Adriana Ayuso" class="profile-img" />
+                <p>I'm a Front-End-focused developer with experience in HTML, CSS, JavaScript, Node.js, and Express. I've built websites for local small businesses and educational projects. I'm passionate about technology and user experience.</p>
+            </div>
+            <a href="assets/pdfs/Grace Ayuso-Software Dev.pdf" target="_blank" class="btn">View My Resume</a>
+        </div> 
+    </section>
 
-    <div class="project">
-      <img src="assets/images/proyecto1.png" alt="Screenshot of Project 1" />
-      <div>
-        <h3>Book Discovery App</h3>
-        <p>MVC web app built with Node.js and JWT authentication to search and recommend books.</p>
-        <p><strong>Technologies:</strong> Node.js, Express, MongoDB, EJS</p>
-        <a href="https://github.com/tuusuario/book-app" target="_blank">View on GitHub</a>
-      </div>
-    </div>
+    <section id="projects" class="hidden">
+        <h2>Projects</h2>
+        <div id="projects-container" class="projects-grid"></div>
+    </section>
 
-    <!-- Add more projects here -->
-  </section>
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <p>You can email me directly at adriayusof@gmail.com or connect via social media:</p>
+        <ul class="social-links">
+            <li><a href="mailto:adriayusof@gmail.com"><img src="assets/images/email_icon.svg" alt="Mail icon" id="email-icon"></a></li>
+            <li><a href="https://github.com/ayusograce" target="_blank"><img src="assets/images/github_icon.svg" alt="Github icon" id="github-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/grace-ayuso/" target="_blank"><img src="assets/images/linkedin_icon.svg" alt="LinkedIn icon" id="linkedin-icon"></a></li>
+        </ul>
+        <a href="#hero" class="scroll-up" aria-label="Scroll up">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a58f7e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15" />
+            </svg>
+        </a>    
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me by email or connect through social media:</p>
-    <ul>
-      <li>Email: <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">tuusuario</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">tuusuario</a></li>
-    </ul>
-  </section>
+    <footer>
+        <p>&copy; 2025 Grace Ayuso.</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 Adriana Ayuso. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/projects.js"></script>
 </body>
 </html>
+
