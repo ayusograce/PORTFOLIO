@@ -17,14 +17,13 @@
 - JavaScript  
 - Responsive Design  
 - Git & GitHub  
-- (Opcional: Netlify / GitHub Pages)
+- Netlify
 
 ---
 
 ## 🚀 Ver en línea | Live Demo
 
-🌍 [https://tusitio.netlify.app](https://tusitio.netlify.app)  
-(Sustituye con tu URL de Netlify o GitHub Pages)
+🌍 [https://graceayuso.netlify.app](https://graceayuso.netlify.app)  
 
 ---
 
