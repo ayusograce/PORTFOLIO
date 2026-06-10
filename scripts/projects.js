@@ -2,6 +2,48 @@
 // Archivo que contiene la información de los proyectos para el portafolio
 
 const projects = [
+    { 
+    title: {
+      en: "Invoice Tracker App",
+      es: "Aplicación de Seguimiento de Facturas"
+    },
+    description: {
+      en: "A simple app to track and manage invoices.",
+      es: "Una aplicación simple para rastrear y gestionar facturas."
+    },
+    tech: "C#, .NET, Blazor",
+    image: "assets/images/invoice.PNG",
+    live: "https://invoice-tracker-363n.onrender.com/",
+    repo: "https://github.com/lishdiane/invoice-tracker"
+  },
+    { 
+    title: {
+      en: "HandCrafted Haven: Artisans Marketplace",
+      es: "HandCrafted Haven: Mercado de Artesanos"
+    },
+    description: {
+      en: "A group front-end project showcasing local artisans and their handmade products.",
+      es: "Un proyecto de front-end grupal que destaca a artesanos locales y sus productos artesanales."
+    },
+    tech: "TypeScript, React",
+    image: "assets/images/handcrafted-haven.png",
+    live: "https://youtu.be/ygY4k5vTjy8?si=xDFxbWxeB5bokvC9&t=7",
+    repo: "https://github.com/ayusograce/handcraft-haven-copy"
+  },
+  { 
+    title: {
+      en: "SplashyFish Game",
+      es: "Juego SplashyFish"
+    },
+    description: {
+      en: "This is a Flappy Bird-inspired game where players control a fish navigating through underwater obstacles.",
+      es: "Este es un juego inspirado en Flappy Bird donde los jugadores controlan un pez que navega a través de obstáculos bajo el agua."
+    },
+    tech: "Python, Arcade Library",
+    image: "assets/images/splashy-fish.png",
+    live: "https://youtu.be/x-i-_rOcf3E?si=EosVLbCLS9D0iFo2&t=242",
+    repo: "https://github.com/ayusograce/splashyfish_game"
+  },
   {
     title: {
       en: "Book Discovery App",
@@ -30,62 +72,65 @@ const projects = [
     live: "https://sleepout-team11.netlify.app/",
     repo: "https://github.com/ayusograce/wdd330-sleepoutside-team11.git"
   },
-  {
-    title: {
-      en: "Vehicles Site",
-      es: "Sitio de Vehículos"
-    },
-    description: {
-      en: "MVC app to browse car information and post comments.",
-      es: "Aplicación MVC para ver información sobre autos y dejar comentarios."
-    },
-    tech: "Node.js, Express, EJS, NoSQL",
-    image: "assets/images/vehicles-site.JPG",
-    live: "https://cse340-n3we.onrender.com/",
-    repo: "https://github.com/ayusograce/CSE340-starter.git"
-  },
-  {
-    title: {
-      en: "Book Club Website",
-      es: "Sitio Web Club de Lectura"
-    },
-    description: {
-      en: "Website for a virtual book club.",
-      es: "Sitio web para un club de libros virtual."
-    },
-    tech: "JavaScript, HTML, CSS",
-    image: "assets/images/book-club.JPG",
-    live: "https://ayusograce.github.io/wdd231/project/home",
-    repo: "https://github.com/ayusograce/wdd231/tree/main/project"
-  },
-  {
-    title: {
-      en: "Commerce Chamber Site",
-      es: "Sitio Cámara de Comercio"
-    },
-    description: {
-      en: "Website for a local chamber of commerce.",
-      es: "Sitio web para una cámara de comercio local."
-    },
-    tech: "JavaScript, HTML, CSS",
-    image: "assets/images/chamber.JPG",
-    live: "https://ayusograce.github.io/wdd231/chamber/index",
-    repo: "https://github.com/ayusograce/wdd231/tree/main/chamber"
-  },
-  {
-    title: {
-      en: "Bakery Website",
-      es: "Sitio Web de Pastelería"
-    },
-    description: {
-      en: "Website for a local bakery.",
-      es: "Sitio web para una pastelería local."
-    },
-    tech: "JavaScript, HTML, CSS",
-    image: "assets/images/irresistible-gourmet.JPG",
-    live: "https://ayusograce.github.io/wdd131/project/home",
-    repo: "https://github.com/ayusograce/wdd131/tree/main/project"
-  }
+
+
+
+  // {
+  //   title: {
+  //     en: "Vehicles Site",
+  //     es: "Sitio de Vehículos"
+  //   },
+  //   description: {
+  //     en: "MVC app to browse car information and post comments.",
+  //     es: "Aplicación MVC para ver información sobre autos y dejar comentarios."
+  //   },
+  //   tech: "Node.js, Express, EJS, NoSQL",
+  //   image: "assets/images/vehicles-site.JPG",
+  //   live: "https://cse340-n3we.onrender.com/",
+  //   repo: "https://github.com/ayusograce/CSE340-starter.git"
+  // },
+  // {
+  //   title: {
+  //     en: "Book Club Website",
+  //     es: "Sitio Web Club de Lectura"
+  //   },
+  //   description: {
+  //     en: "Website for a virtual book club.",
+  //     es: "Sitio web para un club de libros virtual."
+  //   },
+  //   tech: "JavaScript, HTML, CSS",
+  //   image: "assets/images/book-club.JPG",
+  //   live: "https://ayusograce.github.io/wdd231/project/home",
+  //   repo: "https://github.com/ayusograce/wdd231/tree/main/project"
+  // },
+  // {
+  //   title: {
+  //     en: "Commerce Chamber Site",
+  //     es: "Sitio Cámara de Comercio"
+  //   },
+  //   description: {
+  //     en: "Website for a local chamber of commerce.",
+  //     es: "Sitio web para una cámara de comercio local."
+  //   },
+  //   tech: "JavaScript, HTML, CSS",
+  //   image: "assets/images/chamber.JPG",
+  //   live: "https://ayusograce.github.io/wdd231/chamber/index",
+  //   repo: "https://github.com/ayusograce/wdd231/tree/main/chamber"
+  // },
+  // {
+  //   title: {
+  //     en: "Bakery Website",
+  //     es: "Sitio Web de Pastelería"
+  //   },
+  //   description: {
+  //     en: "Website for a local bakery.",
+  //     es: "Sitio web para una pastelería local."
+  //   },
+  //   tech: "JavaScript, HTML, CSS",
+  //   image: "assets/images/irresistible-gourmet.JPG",
+  //   live: "https://ayusograce.github.io/wdd131/project/home",
+  //   repo: "https://github.com/ayusograce/wdd131/tree/main/project"
+  // }
 ];
 
 
