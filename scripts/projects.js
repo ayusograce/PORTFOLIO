@@ -27,7 +27,7 @@ const projects = [
     },
     tech: "TypeScript, React",
     image: "assets/images/handcrafted-haven.png",
-    live: "https://youtu.be/ygY4k5vTjy8?si=xDFxbWxeB5bokvC9&t=7",
+    live: "https://handcraft-shop-gaaf.vercel.app/",
     repo: "https://github.com/ayusograce/handcraft-haven-copy"
   },
   { 
